@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/views/HelloWorld'
+import markup from '@/views/markup'
+import call from '@/views/call'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/markup',
+      name: 'markup',
+      component: markup
+    },
+    {
+      path: '/call',
+      name: 'call',
+      component: call
     }
   ]
 })
