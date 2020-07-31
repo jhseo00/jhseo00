@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import markup from '@/views/markup'
-import call from '@/views/call'
+import call from '@/views/call/Index'
 
 Vue.use(Router)
 

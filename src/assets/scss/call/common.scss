@@ -1,0 +1,146 @@
+body {
+  height: 100%;
+}
+#wrap {
+  position: relative;
+  height: 100%;
+  #header {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width: 100%;
+    height:80px;
+    border-bottom: 1px solid #E5E8F2;
+    background-color:#fff;
+  }
+  #nav {
+    position: absolute;
+    top:0;
+    left:0;
+    padding-top: 80px;
+    width: 100px;
+    height: 100%;
+    border-right: 1px solid #E5E8F2;
+  }
+  #content {
+    position: relative;
+    padding: 80px 0 0 100px;
+    height: 100%;
+  }
+  .callCon {
+    position: relative;
+    display:table;
+    width: 100%;
+    height: 100%;
+    .cenCon {
+      position:absolute;
+      top: 0;
+      left: 0;
+      margin:0 453px 0 320px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color:#fff;
+      .callList {
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 65px;
+        overflow:hidden;
+        border-bottom: 1px solid #E5E8F2;
+        background-color:#fff;
+      }
+      .box {
+        height: 100%;
+        border-right: 1px solid #E5E8F2;
+      }
+    }
+    .ritCon {
+      position: absolute;
+      top:0;
+      right:0;
+      padding-right: 65px;
+      width:453px;
+      height: 100%;
+      background: #fff;
+      .ritNav {
+        position: absolute;
+        top:0;
+        right:0;
+        padding-top: 65px;
+        width: 65px;
+        height: 100%;
+        border-left: 1px solid #DFE3E8;
+        background-color:#F9F9F9;
+      }
+      .ritBox {
+      }
+    }
+    &.ritPop {
+      .cenCon {
+        padding-right: 0;
+        max-width: 1031px;
+      }
+      .ritCon {
+        box-shadow: 0 3px 9px 3px #dee0f57a;
+      }
+    }
+  }
+}
+
+.uxTabBox {
+  ul {
+    padding:8px 20px 9px 0;
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #DFE3E8;
+    li {
+      padding: 0 8px;
+      float:left;
+      width: 50%;
+      text-align:center;
+      border-right: 1px solid #DFE3E8;
+      list-style:none;
+      font-weight: bold;
+      font-size: 14px;
+      a {
+        position: relative;
+        display: inline-block;
+        line-height: 24px;
+        color:#828282;
+        strong {
+          padding: 0 8px;
+          display:inline-block;
+          line-height:19px;
+          border-radius: 3px;
+          color: #919191;
+          background-color: #E8E8E8;
+        }
+      }
+      &.on {
+        a {
+          color:#4F4F4F;
+          strong {
+            color: #2645B6;
+            background-color: #E0E7FF;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            bottom:-9px;
+            left:0;
+            width: 100%;
+            height:2px;
+            background: #6D8DFF;
+          }
+        }
+      }
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
